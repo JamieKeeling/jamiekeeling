@@ -1,0 +1,111 @@
+"use strict"
+
+module.exports = {
+  url: "https://jamiekeeling.dev",
+  title: "Developer Diary",
+  tagline: "Something witty.",
+  copyright: "© 2019 Jamie Keeling, All rights reserved",
+  author: {
+    name: "Jamie Keeling",
+    bio: "Cloud Wrangler. .NET Core developer.",
+    contacts: {
+      linkedin: "https://www.linkedin.com/in/jamie-keeling/",
+      github: "https://github.com/JamieKeeling",
+      stackoverflow: "https://stackoverflow.com/users/218159/jamie-keeling",
+      twitter: "https://twitter.com/Jamie_Keeling"
+    },
+  },
+  labels: [
+    {
+      tag: "react",
+      tech: "React",
+      name: "DiReact",
+      size: 20,
+      color: "deepskyblue",
+    },
+    {
+      tag: "nodejs",
+      tech: "Node.js",
+      name: "DiNodejsSmall",
+      size: 20,
+      color: "lightgreen",
+    },
+    {
+      tag: "git",
+      tech: "Git",
+      name: "DiGitMerge",
+      size: 20,
+      color: "white",
+    },
+    {
+      tag: "javascript",
+      tech: "JavaScript",
+      name: "DiJsBadge",
+      size: 20,
+      color: "yellow",
+    },
+    {
+      tag: "css",
+      tech: "CSS",
+      name: "DiCss3Full",
+      size: 20,
+      color: "teal",
+    },
+    {
+      tag: "python",
+      tech: "Python",
+      name: "DiPython",
+      size: 20,
+      color: "deepskyblue",
+    },
+    {
+      tag: "ruby",
+      tech: "Ruby",
+      name: "DiRuby",
+      size: 20,
+      color: "crimson",
+    },
+    {
+      tag: "java",
+      tech: "Java",
+      name: "FaJava",
+      size: 20,
+      color: "wheat",
+    },
+    {
+      tag: "angular",
+      tech: "Angular",
+      name: "DiAngularSimple",
+      size: 20,
+      color: "red",
+    },
+    {
+      tag: "html",
+      tech: "HTML",
+      name: "FaHtml5",
+      size: 20,
+      color: "darkorange",
+    },
+    {
+      tag: "php",
+      tech: "php",
+      name: "DiPhp",
+      size: 20,
+      color: "violet",
+    },
+    {
+      tag: "mongodb",
+      tech: "MongoDB",
+      name: "DiMongodb",
+      size: 20,
+      color: "green",
+    },
+    {
+      tag: "vscode",
+      tech: "VS Code",
+      name: "DiVisualstudio",
+      size: 20,
+      color: "deepskyblue",
+    },
+  ],
+}

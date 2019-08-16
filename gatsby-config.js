@@ -1,17 +1,64 @@
+'use strict'
+
+const siteConfig = require("./config")
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    url: siteConfig.url,
+    title: siteConfig.title,
+    tagline: siteConfig.tagline,
+    description: `A blog template for web developers that's ready to go out of the box. Feel free to modify it to your liking.`,
+    author: siteConfig.author.name,
+    contacts: {
+      linkedin: siteConfig.author.contacts.linkedin,
+      github: siteConfig.author.contacts.github,
+      stackoverflow: siteConfig.author.contacts.stackoverflow,
+      freecodecamp: siteConfig.author.contacts.freecodecamp,
+      twitter: siteConfig.author.contacts.twitter,
+    },
+    labels: siteConfig.labels,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            }
+          }, `gatsby-remark-responsive-iframe`,
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Raleway`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
